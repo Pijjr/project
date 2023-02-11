@@ -10,16 +10,16 @@
     <title>Макет 1.6 Тюрин </title>
   </head>
   <body class="main-page">
-    <div class="burger-menu">
-      <div class="burger-menu__header">
+    <div class="burger-menu burger_menu--hidden">
+      <div class="burger-header">
         <button class="button button-close"></button>
         <a href="#">
           <img src="./img/logo.svg" alt="Логотип компании" />
         </a>
         <button class="button button-search"></button>
       </div>
-      <nav class="burger-menu__nav-panel">
-        <ul class="burger-menu__nav-list">
+      <nav class="burger-nav">
+        <ul class="nav-list">
           <li class="nav-list__item">
             <a href="#" class="nav-list__link"> Ремонт техники </a>
           </li>
@@ -46,7 +46,7 @@
           </li>
         </ul>
       </nav>
-      <div class="burger-menu__footer">
+      <div class="burger-footer">
         <div class="footer__button-list">
           <button class="button button-phone"></button>
           <button class="button button-message"></button>
@@ -67,6 +67,101 @@
           <button class="footer-languages__button">CH</button>
         </div>
       </div>
+    </div>
+    <div class="main-content">
+      <header class="header">
+        <div class="header-container">
+          <div class="header-panel">
+            <div class="buttons-group">
+              <button class="button button-burger"></button>
+              <div class="divider-burger"></div>
+              <div class="logo">
+                <a href="#">
+                  <img src="/src/img/logo.svg" alt="Логотип компании" />
+                </a>
+              </div>
+              <div class="divider-logo"></div>
+            </div>
+            <div class="buttons-group">
+              <button class="button button-phone"></button>
+              <button class="button button-message"></button>
+              <button class="button button-profile"></button>
+              <div class="divider-profile"></div>
+              <button class="button button-repair"></button>
+              <button class="button button-checkstatus"></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="services">
+        <div class="container">
+          <div class="services__header">
+            <h1 class="services__title"> Услуги и сервисы </h1>
+            <div class="services__navigation">
+              <button class="services__button">
+                <span class="button__label">Оставить заявку</span>
+                <div class="button button-repair"></div>
+              </button>
+              <button class="services__button">
+                <span class="button__label">Статус ремонта</span>
+                <div class="button button__checkstatus"></div>
+              </button>
+            </div>
+          </div>
+          <nav class="services__slider">
+            <ul class="slider__list">
+              <li
+                class="slider__item slider__item--active slider__item--highlighted"
+              >
+                <a href="#" class="slider__link">Ремонтируемые бренды</a>
+              </li>
+              <li class="slider__item slider__item--active">
+                <a href="#" class="slider__link">Ремонтируемые устройства</a>
+              </li>
+              <li class="slider__item slider__item--active">
+                <a href="#" class="slider__link">Цены на услуги</a>
+              </li>
+              <li class="slider__item slider__item--active">
+                <a href="#" class="slider__link">Адреса сервисных центров</a>
+              </li>
+              <li class="slider__item slider__item--active">
+                <a href="#" class="slider__link">Специальные цены</a>
+              </li>
+              <li class="slider__item slider__item--active">
+                <a href="#" class="slider__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="services__text">
+            <div class="text__description">
+              <p class="text__paragraph">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <br />
+              <p class="text__paragraph">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <div class="read-more">
+                <button class="read-more__button read-more__link">
+                  Читать далее
+                </button>
+              </div>
+            </div>
+            <img
+              src="/src/img/logo-in-office.jpg"
+              alt="Фото вывески сервисного центра"
+              class="service__image"
+            />
+          </div>
+          <!--тут продолжай. Дальше свайпер для брендов идёт но для начала
+          задай стили services-->
+        </div>
+      </main>
     </div>
   </body>
 </html>

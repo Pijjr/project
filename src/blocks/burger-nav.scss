@@ -1,0 +1,27 @@
+.nav-list {
+  list-style: none;
+  margin-top: 32px;
+}
+
+.nav-list__link {
+  @include textFormatting;
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 0;
+  margin-bottom: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  &:hover {
+    color: $text-grey;
+    transition: ease-in-out 0, 1s;
+  }
+}
+
+.nav-list__item:hover::before {
+  @include greenString-menu;
+}
+
+.nav-list-link:first-child {
+  color: $text-grey;
+}

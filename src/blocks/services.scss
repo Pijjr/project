@@ -1,0 +1,24 @@
+.services {
+  background-color: $background-main;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.services__title {
+  @include textFormatting;
+  font-size: 28px;
+  padding-top: 24px;
+  font-weight: 700;
+  &::before {
+    @include greenString-menu;
+  }
+}
+
+.services__navigation {
+  display: none;
+}
+
+.services__slider {
+}

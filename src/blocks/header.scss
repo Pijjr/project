@@ -1,0 +1,49 @@
+.header {
+  background-color: $background-white;
+  padding: 19px 0;
+  border-bottom: 1px solid $button-border;
+}
+
+.header-container {
+  padding: 0 16px;
+}
+
+.header-panel {
+  @include flexCenter(row);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons-group {
+  @include flexCenter(row);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-burger {
+  background-image: url('/src/img/burger.svg');
+  margin-right: 16px;
+}
+
+.divider-logo {
+  width: 2px;
+  height: 32px;
+  vertical-align: super;
+  background-color: $border-color;
+  margin-left: 16px;
+}
+
+.button-phone,
+.button-message,
+.button-profile {
+  display: none;
+}
+
+.button-repair {
+  background-image: url('/src/img/repair.svg');
+  margin-right: 16px;
+}
+
+.button-checkstatus {
+  background-image: url('/src/img/checkstatus.svg');
+}

@@ -1,0 +1,36 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  background-color: $button-color;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.5;
+    transform: all ease 0.5s;
+  }
+}
+
+@mixin greenString-menu {
+  content: '';
+  position: absolute;
+  left: -4px;
+  border-left: 8px solid #41f6d7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 32px;
+}
+
+@mixin textFormatting {
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  color: $textColor;
+}

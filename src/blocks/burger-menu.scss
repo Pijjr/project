@@ -1,0 +1,28 @@
+.burger-menu {
+  @include flexCenter(column);
+  min-width: 306px;
+  max-width: 360px;
+  height: 100vh;
+  position: fixed;
+  background-color: $background-white;
+  padding: 19px 24px 32px;
+  @media (min-width: 1336px) {
+    display: flex;
+    transition: all 0.5s;
+  }
+}
+
+.burger_menu--hidden {
+  display: none;
+}
+
+.burger-menu--absolute {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  background-color: $background-white;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  @media (max-width: 360px) {
+    width: 100%;
+  }
+}

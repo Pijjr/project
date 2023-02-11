@@ -1,0 +1,21 @@
+.burger-header {
+  @include flexCenter(row);
+  align-items: center;
+  width: 272px;
+}
+
+.button {
+  @include button;
+}
+
+.button-close {
+  background-image: url(/src/img/close.png);
+  margin-right: 16px;
+  background-position: 10px 11px;
+}
+
+.button-search {
+  background-image: url(/src/img/search.png);
+  margin-left: auto;
+  background-position: 10px 11px;
+}

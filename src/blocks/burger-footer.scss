@@ -1,0 +1,68 @@
+.burger-footer {
+  margin-top: auto;
+}
+
+.footer__button-list {
+  @include flexCenter(row);
+  margin-top: 0px;
+  justify-content: space-between;
+  width: 154px;
+}
+
+.button-phone {
+  background-image: url('/src/img/call.svg');
+}
+
+.button-message {
+  background-image: url('/src/img/chat.svg');
+}
+
+.button-profile {
+  background-image: url('/src/img/profile.svg');
+}
+
+.footer__mail-link {
+  @include textFormatting;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-top: 16px;
+}
+
+.footer__phone-number {
+  @include textFormatting;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-top: 12px;
+}
+
+.footer-languages__button {
+  @include textFormatting;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  border: none;
+  margin-top: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  &:hover {
+    color: $text-grey;
+  }
+  @media (max-width: 360px) {
+    margin-top: 8px;
+  }
+  @media (min-width: 760px) {
+    margin-top: 32px;
+  }
+}
+
+.footer-languages__button--active {
+  color: $text-grey;
+}
