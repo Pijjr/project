@@ -1,5 +1,11 @@
+.main-page {
+  background-color: $background-main;
+  max-width: 1440px;
+}
+
 .services {
   background-color: $background-main;
+  border-bottom: 1px solid $titleBorder;
 }
 
 .container {
@@ -20,5 +26,228 @@
   display: none;
 }
 
-.services__slider {
+.slider__list {
+  @include flexCenter(row);
+  font-family: 'TT Lakes';
+  list-style: none;
+  overflow: auto;
+  position: relative;
+  margin: 24px 0;
+}
+
+.slider__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slider__list::after {
+  display: block;
+  content: '';
+  position: fixed;
+  width: 80px;
+  height: 40px;
+  right: 15px;
+}
+
+.slider__item {
+  color: $text-grey;
+  border: 2px solid transparent;
+  font-size: 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.slider__link {
+  flex-shrink: 0;
+  color: $text-grey;
+  text-decoration: none;
+}
+
+.slider__item--active:active,
+.slider__item--highlighted {
+  background-color: $background-white;
+  border: 2px solid $button-border;
+  border-radius: 6px;
+}
+
+.text__paragraph {
+  @include textFormatting;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 16px 0;
+  transition: all ease-in-out 1s;
+}
+
+.read-more__button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+    transform: ease-in-out 0.5ms;
+  }
+}
+
+.read-more__link {
+  @include textFormatting;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-less__icon {
+  margin-right: 16px;
+  transform: rotate(180deg);
+  transition: all ease-in-out 100ms;
+}
+
+.read-more__icon {
+  margin-right: 5px;
+  transform: rotate(0deg);
+  transition: all ease-in-out 100ms;
+}
+
+.service__image {
+  width: 100vw;
+  margin-left: -16px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 650px) {
+  .second-paragraph,
+  .third-paragraph,
+  .fourth-paragraph {
+    display: none;
+  }
+
+  .read-more {
+    margin-top: 10px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1119px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .services__text {
+    @include flexCenter(row);
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .text__description {
+    margin-right: 48px;
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+
+  .third-paragraph--hidden {
+    display: none;
+  }
+
+  .fourth-paragraph--hidden {
+    display: none;
+  }
+
+  .service__image {
+    height: 208px;
+    border-radius: 6px;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .read-more {
+    margin-top: 0;
+  }
+
+  .read-less__icon {
+    margin-right: 5px;
+    transform: rotate(180deg);
+    transition: all ease-in-out 300ms;
+  }
+
+  .read-more__icon {
+    margin-right: 5px;
+    transform: rotate(0deg);
+    transition: all ease-in-out 300ms;
+  }
+}
+
+@media (min-width: 1120px) {
+  .services__header {
+    @include flexCenter(row);
+    justify-content: space-between;
+    padding-top: 24px;
+    align-items: flex-end;
+  }
+
+  .services__navigation {
+    display: flex;
+  }
+
+  .services__button {
+    @include textFormatting;
+    @include flexCenter(row);
+    align-items: center;
+    background: transparent;
+    border: none;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .button__label {
+    margin-right: 9px;
+  }
+
+  .slider__list {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 12px;
+  }
+
+  .slider__item {
+    margin-right: 12px;
+  }
+
+  .services__text {
+    @include flexCenter(row);
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .text__description {
+    margin-right: 48px;
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+
+  .second-paragraph {
+    display: none;
+  }
+
+  .third-paragraph--hidden {
+    display: none;
+  }
+
+  .service__image {
+    width: 100vw;
+    height: 384px;
+    margin-left: 0;
+    margin-bottom: 50px;
+    border-radius: 6px;
+  }
 }

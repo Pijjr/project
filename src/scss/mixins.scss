@@ -3,6 +3,22 @@
   flex-direction: $direction;
 }
 
+@mixin gridTablet {
+  display: grid;
+  grid-template-columns: 50% 14% 14% 17%;
+  column-gap: 5px;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+@mixin gridHeader {
+  background-color: $background-main;
+  border-bottom: none;
+  color: $text-grey;
+}
+
 @mixin button {
   width: 40px;
   height: 40px;
@@ -33,4 +49,34 @@
   font-family: 'TT Lakes';
   font-size: 16px;
   color: $textColor;
+}
+
+@mixin textGrey {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  color: $text-grey;
+  font-weight: 500;
+}
+
+@mixin titleFormatting {
+  font-family: 'TT Lakes';
+  color: $text-grey;
+  height: 100%;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0;
+}
+
+@mixin repairTitle {
+  font-family: 'TT Lakes';
+  color: $text-grey;
+  height: 100%;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
 }

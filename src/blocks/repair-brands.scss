@@ -1,0 +1,228 @@
+.repair-brands {
+  background-color: $background-main;
+  margin: 0;
+}
+
+.repair-brands__title {
+  @include repairTitle;
+  padding: 16px 0;
+}
+
+.swiper.brands-catalog {
+  padding-top: 12px;
+  transition: all ease-in-out 300ms;
+}
+
+.brands-catalog__list {
+  height: 130px;
+  display: flex;
+}
+
+.swiper-slide.card {
+  display: flex;
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.brand-card__logo {
+  max-width: 140px;
+  padding-left: 10px;
+}
+
+.brand-card__button {
+  background-image: url('/src/img/button-go.svg');
+  background-color: $background-white;
+  margin-right: 7px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #dddddd;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+  opacity: 1;
+}
+
+.show-all {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .repair-brands {
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1019px) {
+  .repair-brands__title {
+    height: 56px;
+    padding: 16px;
+  }
+
+  .brands-catalog__list {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 290px;
+    transition: all ease-in-out 300ms;
+    margin-left: 16px;
+  }
+
+  .brands-catalog__list--hidden {
+    height: 190px;
+  }
+
+  .swiper-slide.card {
+    width: 224px;
+    margin: 12px 12px 8px 12px;
+  }
+
+  .show-all {
+    @include flexCenter(row);
+    @include textFormatting;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $background-main;
+    padding: 8px 39px 16px;
+    transition: all ease-in-out 1s;
+  }
+
+  .show-less__icon {
+    margin-right: 16px;
+    transform: rotate(180deg);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__icon {
+    margin-right: 8px;
+    transform: rotate(0);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1119px) {
+  .repair-brands__title {
+    height: 56px;
+    padding: 16px;
+  }
+
+  .swiper.brands-catalog {
+    width: 1060px;
+  }
+
+  .brands-catalog__list {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 290px;
+    transition: all ease-in-out 300ms;
+  }
+
+  .brands-catalog__list--hidden {
+    height: 190px;
+  }
+
+  .swiper-slide.card {
+    width: 224px;
+    margin: 12px 12px 8px 12px;
+  }
+
+  .show-all {
+    @include flexCenter(row);
+    @include textFormatting;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $background-main;
+    padding: 8px 39px 16px;
+    transition: all ease-in-out 1s;
+  }
+
+  .show-less__icon {
+    margin-right: 16px;
+    transform: rotate(180deg);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__icon {
+    margin-right: 16px;
+    transform: rotate(0);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1120px) {
+  .repair-brands__title {
+    height: 56px;
+    padding: 16px;
+    margin-left: 12px;
+  }
+
+  .brands-catalog__list {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 270px;
+    transition: all ease-in-out 300ms;
+    margin-left: 24px;
+  }
+
+  .brands-catalog__list--hidden {
+    height: 190px;
+  }
+
+  .swiper-slide.card {
+    width: 240px;
+    margin: 12px 12px 8px 12px;
+  }
+
+  .show-all {
+    @include flexCenter(row);
+    @include textFormatting;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $background-main;
+    padding: 8px 27px 16px;
+    transition: all ease-in-out 1s;
+  }
+
+  .show-less__icon {
+    margin-right: 16px;
+    transform: rotate(180deg);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__icon {
+    margin-right: 16px;
+    transform: rotate(0);
+    transition: all ease-in-out 300ms;
+  }
+
+  .show-all__button {
+    @include textFormatting;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

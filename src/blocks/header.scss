@@ -33,12 +33,6 @@
   margin-left: 16px;
 }
 
-.button-phone,
-.button-message,
-.button-profile {
-  display: none;
-}
-
 .button-repair {
   background-image: url('/src/img/repair.svg');
   margin-right: 16px;
@@ -46,4 +40,59 @@
 
 .button-checkstatus {
   background-image: url('/src/img/checkstatus.svg');
+}
+
+@media (max-width: 650px) {
+  .button-phone,
+  .button-message,
+  .button-profile {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1119px) {
+  .header-container {
+    padding: 0 24px;
+  }
+
+  .divider-logo {
+    display: none;
+  }
+
+  .divider-burger {
+    width: 2px;
+    height: 32px;
+    vertical-align: super;
+    background-color: $border-color;
+    margin-left: 4px;
+    margin-right: 16px;
+  }
+
+  .button-phone,
+  .button-message,
+  .button-profile,
+  .button-repair {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  .button-repair {
+    margin-left: 24px;
+  }
+
+  .divider-profile {
+    display: inline-block;
+    vertical-align: super;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
 }
