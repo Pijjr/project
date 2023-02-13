@@ -3,7 +3,6 @@
   min-width: 306px;
   max-width: 360px;
   height: 100vh;
-  position: fixed;
   background-color: $background-white;
   padding: 19px 24px 32px;
   @media (min-width: 1336px) {
@@ -14,6 +13,11 @@
 
 .burger_menu--hidden {
   display: none;
+  transition: left 2s ease-in-out;
+  @media (min-width: 1336px) {
+    display: flex;
+    transition: all ease-in-out 0.2s;
+  }
 }
 
 .burger-menu--absolute {

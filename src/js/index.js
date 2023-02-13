@@ -5,4 +5,5 @@ import '../js/show-text'
 import '../js/swiper-repair-devices'
 import '../js/show-devices'
 import '../js/swiper-price-list'
+import '../js/burger-menu'
 console.log('Works!')

@@ -130,10 +130,6 @@
   .read-more {
     margin-top: 10px;
   }
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: 651px) and (max-width: 1119px) {
@@ -191,6 +187,9 @@
     justify-content: space-between;
     padding-top: 24px;
     align-items: flex-end;
+    @media (min-width: 1366px) {
+      padding-top: 6px;
+    }
   }
 
   .services__navigation {
@@ -205,6 +204,7 @@
     border: none;
     margin-left: 16px;
     cursor: pointer;
+    font-weight: 600;
   }
 
   .button__label {

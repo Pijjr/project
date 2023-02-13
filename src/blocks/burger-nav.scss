@@ -19,7 +19,7 @@
 }
 
 .nav-list__item:hover::before {
-  @include greenString-menu;
+  @include greenString-navigation;
 }
 
 .nav-list-link:first-child {

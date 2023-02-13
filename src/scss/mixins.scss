@@ -37,12 +37,34 @@
 
 @mixin greenString-menu {
   content: '';
-  position: absolute;
-  left: -4px;
+  position: relative;
+  left: -16px;
   border-left: 8px solid #41f6d7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   height: 32px;
+  margin-left: 0;
+  @media (min-width: 767px) and (max-width: 1335px) {
+    left: -24px;
+  }
+  @media (min-width: 1337px) {
+    position: relative;
+    left: -15px;
+  }
+}
+
+@mixin greenString-navigation {
+  content: '';
+  position: relative;
+  left: -15px;
+  border-left: 4px solid #41f6d7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 52px;
+  @media (min-width: 1336px) {
+    position: relative;
+    left: -23px;
+  }
 }
 
 @mixin textFormatting {
@@ -79,4 +101,13 @@
   line-height: 24px;
   font-size: 16px;
   font-weight: 500;
+  padding: 16px 0;
+
+  @media (max-width: 767px) {
+    padding-left: 13px;
+  }
+
+  @media (min-width: 767px) {
+    padding-left: 24px;
+  }
 }

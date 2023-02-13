@@ -7,14 +7,34 @@
   background-color: $background-main;
   align-content: center;
   padding: 0 32px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: 147px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 24px;
+  }
+  @media (min-width: 1336px) {
+    padding: 0 24px;
+  }
 }
 
 .footer__confidential {
   text-decoration: none;
   color: $text-grey;
   text-align: center;
+  @media (min-width: 1336px) {
+    text-align: left;
+  }
 }
 
 .footer__offer {
   text-align: right;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }

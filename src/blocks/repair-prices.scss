@@ -1,7 +1,6 @@
 .repair-prices {
   background-color: $background-main;
   border-top: 1px solid $titleBorder;
-  margin-top: 32px;
 }
 
 .repair-prices__title {
@@ -41,6 +40,7 @@
 }
 
 .card__text {
+  @include textFormatting;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -116,14 +116,30 @@
 }
 
 .prices-info {
-  margin-left: 28px;
   @include textFormatting;
+
+  @media (max-width: 767px) {
+    padding-left: 12px;
+  }
+  @media (min-width: 767px) and (max-width: 1199px) {
+    padding-left: 32px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 32px;
+  }
 }
 
 .prices-info__text {
-  width: 421px;
-  height: 60px;
+  max-width: 421px;
   margin-bottom: 32px;
+  font-size: 14px;
+  @media (max-width: 767px) {
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  @media (min-width: 767px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .prices-info__link {
@@ -133,8 +149,17 @@
   color: $textColor;
   padding-top: 16px;
   padding-bottom: 50px;
+
+  @media (max-width: 767px) {
+    width: 206px;
+    padding-bottom: 40px;
+  }
 }
 
 .prices-info__arrow {
   padding-left: 10px;
+  @media (max-width: 767px) {
+    position: relative;
+    left: -102px;
+  }
 }
