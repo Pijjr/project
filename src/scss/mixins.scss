@@ -66,6 +66,15 @@
     left: -23px;
   }
 }
+@mixin greenString-modal {
+  content: '';
+  position: relative;
+  left: -32px;
+  border-left: 4px solid #41f6d7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 52px;
+}
 
 @mixin textFormatting {
   font-family: 'TT Lakes';
@@ -78,6 +87,17 @@
   font-size: 14px;
   color: $text-grey;
   font-weight: 500;
+}
+
+@mixin modalTitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Lakes';
+  font-size: 24px;
+  color: $textColor;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
 }
 
 @mixin titleFormatting {

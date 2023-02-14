@@ -1,0 +1,99 @@
+.modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  transition: all 0.2s;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.modal-container--hidden {
+  display: none;
+  transition: all 0.2s;
+}
+
+.modal {
+  min-width: 320px;
+  max-width: 440px;
+  height: 100vh;
+  padding: 32px;
+  margin-left: auto;
+  background-color: $background-white;
+  position: relative;
+  @media (max-width: 360px) {
+    width: 100%;
+    padding: 24px 16px;
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  left: -65px;
+  background-image: url('/src/img/close.png');
+  background-position: 10.5px 10px;
+  @media (max-width: 520px) {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
+
+.modal__title {
+  @include modalTitle;
+
+  &::before {
+    @include greenString-modal;
+  }
+}
+
+.modal-form {
+  @include flexCenter(column);
+  @include textFormatting;
+  padding-top: 24px;
+}
+
+.modal-form__field {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  height: 48px;
+}
+
+.modal-form__field[placeholder] {
+  padding: 12px 16px;
+}
+
+.modal-form__field--xl {
+  height: 118px;
+}
+
+.modal__agreement {
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-grey;
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+
+.modal__link {
+  color: $button-color;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button-submit {
+  display: flex;
+  @include button;
+  border-radius: 16px;
+  width: 136px;
+  height: 32px;
+  background-image: url('/src/img/submit.svg');
+  align-self: end;
+  &:hover {
+    opacity: 0.5;
+    transform: all ease 0.5s;
+  }
+}
