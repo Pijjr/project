@@ -30,7 +30,7 @@
 .modal__button-close {
   position: absolute;
   left: -65px;
-  background-image: url('../src/img/close.png');
+  background-image: url('../img/close.png');
   background-position: 10.5px 10px;
   @media (max-width: 520px) {
     position: static;
@@ -90,7 +90,7 @@
   border-radius: 16px;
   width: 136px;
   height: 32px;
-  background-image: url('../src/img/submit.svg');
+  background-image: url('../img/submit.svg');
   align-self: end;
   &:hover {
     opacity: 0.5;
