@@ -2185,6 +2185,9 @@ swiper-container .swiper-notification {
   opacity: 0.03;
   transition: all 0.2s; }
 
+.fixed {
+  position: fixed; }
+
 .modal-container {
   position: absolute;
   top: 0;
