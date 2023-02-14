@@ -9,7 +9,7 @@
 }
 
 .button-close {
-  background-image: url('./img/close.png'); /*(/src/img/close.png);*/
+  background-image: url('../src/img/close.png'); /*(/src/img/close.png);*/
   margin-right: 16px;
   background-position: 10px 11px;
   @media (min-width: 1336px) {
@@ -18,7 +18,7 @@
 }
 
 .button-search {
-  background-image: url('./img/search.png');
+  background-image: url('../src/img/search.png');
   margin-left: auto;
   background-position: 10px 11px;
   @media (min-width: 1336px) {
