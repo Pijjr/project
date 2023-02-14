@@ -65,11 +65,10 @@ headerButtonChat.addEventListener('click', function () {
 })
 
 mainPage.addEventListener('click', function () {
-  if (window.innerWidth >= 1120) {
-    modalFeedback.classList.add('modal-container--hidden')
-    modalCall.classList.add('modal-container--hidden')
-    mainPage.classList.remove('page-blur')
-    burger.classList.remove('page-blur')
-    mainPage.classList.remove('fixed')
-  }
+  modalFeedback.classList.add('modal-container--hidden')
+  modalCall.classList.add('modal-container--hidden')
+  mainPage.classList.remove('page-blur')
+  burger.classList.remove('page-blur')
+  header.classList.remove('page-blur')
+  mainPage.classList.remove('fixed')
 })
