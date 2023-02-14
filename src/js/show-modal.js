@@ -35,7 +35,6 @@ buttonCloseChat.addEventListener('click', function () {
   mainPage.classList.remove('page-blur')
   burger.classList.remove('page-blur')
 })
-
 export let headerButtonCall = document.querySelector('.button-phone')
 export let headerButtonChat = document.querySelector('.button-message')
 
