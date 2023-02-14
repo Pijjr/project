@@ -434,7 +434,7 @@
     transform: all ease 0.5s; }
 
 .button-close {
-  background-image: url(/src/img/close.png);
+  background-image: url(./static/close.png);
   margin-right: 16px;
   background-position: 10px 11px; }
   @media (min-width: 1336px) {
@@ -442,7 +442,7 @@
       display: none; } }
 
 .button-search {
-  background-image: url(/src/img/search.png);
+  background-image: url(./static/search.png);
   margin-left: auto;
   background-position: 10px 11px; }
   @media (min-width: 1336px) {
@@ -495,13 +495,13 @@
   width: 154px; }
 
 .button-phone-burger {
-  background-image: url("/src/img/call.svg"); }
+  background-image: url(./static/call.svg); }
 
 .button-message-burger {
-  background-image: url("/src/img/chat.svg"); }
+  background-image: url(./static/chat.svg); }
 
 .button-profile-burger {
-  background-image: url("/src/img/profile.svg"); }
+  background-image: url(./static/profile.svg); }
 
 .footer__mail-link {
   font-family: 'TT Lakes';
@@ -571,17 +571,17 @@
   align-items: center; }
 
 .button-burger {
-  background-image: url("/src/img/burger.svg");
+  background-image: url(./static/burger.svg);
   margin-right: 16px; }
 
 .button-phone {
-  background-image: url("/src/img/call.svg"); }
+  background-image: url(./static/call.svg); }
 
 .button-message {
-  background-image: url("/src/img/chat.svg"); }
+  background-image: url(./static/chat.svg); }
 
 .button-profile {
-  background-image: url("/src/img/profile.svg"); }
+  background-image: url(./static/profile.svg); }
 
 .divider-logo {
   width: 2px;
@@ -591,11 +591,11 @@
   margin-left: 16px; }
 
 .button-repair {
-  background-image: url("/src/img/repair.svg");
+  background-image: url(./static/repair.svg);
   margin-right: 16px; }
 
 .button-checkstatus {
-  background-image: url("/src/img/checkstatus.svg"); }
+  background-image: url(./static/checkstatus.svg); }
 
 @media (max-width: 650px) {
   .button-phone,
@@ -1580,7 +1580,7 @@ swiper-container .swiper-notification {
   padding-left: 10px; }
 
 .brand-card__button {
-  background-image: url("/src/img/button-go.svg");
+  background-image: url(./static/button-go.svg);
   background-color: #ffffff;
   margin-right: 7px; }
 
@@ -1776,7 +1776,7 @@ swiper-container .swiper-notification {
   padding: 16px; }
 
 .devices-card__button {
-  background-image: url(/src/img/button-go.svg);
+  background-image: url(./static/button-go.svg);
   background-color: #ffffff;
   align-self: flex-end;
   margin: 16px; }
@@ -2022,7 +2022,7 @@ swiper-container .swiper-notification {
   background-color: transparent;
   border: none;
   border-radius: 0;
-  background-image: url("/src/img/button-to-order.svg"); }
+  background-image: url(./static/button-to-order.svg); }
 
 .price-list-new {
   display: grid;
@@ -2213,7 +2213,7 @@ swiper-container .swiper-notification {
 .modal__button-close {
   position: absolute;
   left: -65px;
-  background-image: url("/src/img/close.png");
+  background-image: url(./static/close.png);
   background-position: 10.5px 10px; }
   @media (max-width: 520px) {
     .modal__button-close {
@@ -2286,7 +2286,7 @@ swiper-container .swiper-notification {
   border-radius: 16px;
   width: 136px;
   height: 32px;
-  background-image: url("/src/img/submit.svg");
+  background-image: url(./static/submit.svg);
   align-self: end; }
   .button-submit:hover {
     opacity: 0.5;
